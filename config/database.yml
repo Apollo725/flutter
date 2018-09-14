@@ -5,13 +5,17 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  adapter: mysql2
+  # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: 20
+  encoding: utf8
+  username: root
+  password: password
   timeout: 5000
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: flutter
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
