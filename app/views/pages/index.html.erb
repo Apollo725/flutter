@@ -1,2 +1,74 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<% if !user_signed_in? %>
+  <style>
+    body {
+      background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("/bg.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    }
+    h1 {
+      font-weight: bold;
+    }
+    .container-index {
+      color: white;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    .text {
+      font-size: 130%;
+      margin-top: 10%;
+    }
+    .log-in {
+      width: 300px;
+      height: 150px;
+      float: right;
+      margin-top: 10%;
+    }
+    .sign-up {
+      width: 300px;
+      height: 250px;
+      float: right;
+    }
+    .footer-links {
+      text-align: center;
+    }
+  </style>
+  <div class="container-index row">
+    <div class="col-sm-6">
+      <h1>Welcome to Flutter.</h1>
+      <p class="text">
+        Connect with your friends and other fascinating people. <br>
+        Get in the moment updates on the things that interest you. <br>
+        And watch events unfold, in Rel time, from every angle.
+      </p>
+    </div>
+    <div class="col-sm-6">
+      <div class="log-in panel">
+      </div>
+      <div class="sign-up panel">
+      </div>
+    </div>
+    <div class="col-sm-12">
+        <div class="footer-links">
+          <p>About  Help Centre Blog
+            Status
+            Jobs
+            Terms
+            Privacy Policy
+            Cookies
+            Ads info
+            Brand
+            Apps
+            Advertise
+            Marketing
+            Businesses
+            Developers
+            Directory
+            Settings
+            © 2018 Twitter</p>
+        </div>
+    </div>
+  </div>
+<% else %>
+  sign
+<% end %>

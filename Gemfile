@@ -14,6 +14,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'jquery-rails'
 gem 'devise', '~> 4.5'
 gem 'mysql2'
+gem 'font-awesome-sass'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
