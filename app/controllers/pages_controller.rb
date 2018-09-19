@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def home
+    @newPost = Post.new
   end
 
   def profile

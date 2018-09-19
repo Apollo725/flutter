@@ -20,7 +20,15 @@
     <% for @p in @posts %>
       <div class="panel panel-default">
         <div class="panel-body">
-          <p><%= @p.content %></p>
+          <div class="col-sm-1">
+            AVATA
+          </div>
+          <div class="col-sm-1">
+            <p><%= @p.content %></p>
+          </div>
+          <div class="col-sm-1">
+            link
+          </div>
         </div>
       </div>
     <% end %>
